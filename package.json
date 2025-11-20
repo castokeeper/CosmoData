@@ -1,0 +1,17 @@
+{
+  "name": "cosmodata",
+  "version": "1.0.0",
+  "description": "Sitio web moderno sobre astronomía con e-commerce funcional",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "serve": "http-server -p 8080 -c-1"
+  },
+  "keywords": [
+    "astronomy",
+    "e-commerce",
+    "space",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT"
+}

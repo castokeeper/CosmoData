@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora nuestro Sistema Solar - Conoce los 8 planetas, sus características y datos fascinantes">
+    <meta name="keywords"
+        content="sistema solar, planetas, mercurio, venus, tierra, marte, júpiter, saturno, urano, neptuno">
+
+    <title>Sistema Solar - CosmoData</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <i class="fas fa-rocket loading-icon"></i>
+            <h2>CosmoData</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-rocket"></i>
+                <span class="logo-text">CosmoData</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sistema-solar.html" class="nav__link active-link">Sistema Solar</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="exploracion.html" class="nav__link">Exploración</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="eventos.html" class="nav__link">Eventos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="tienda.html" class="nav__link">Tienda</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">0</span>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main page-sistema-solar">
+        <!-- Hero Section -->
+        <section class="hero hero-solar">
+            <div class="hero__container container">
+                <div class="hero__content" data-aos="fade-up">
+                    <h1 class="hero__title">
+                        Nuestro <span class="gradient-text">Sistema Solar</span>
+                    </h1>
+                    <p class="hero__description">
+                        8 planetas, millones de kilómetros, un solo sistema. Descubre los mundos que componen nuestro
+                        vecindario cósmico.
+                    </p>
+                </div>
+            </div>
+            <div class="hero__overlay"></div>
+        </section>
+
+        <!-- Planets Section -->
+        <section class="planets section">
+            <div class="planets__container container">
+                <div id="planets-grid" class="planets-grid">
+                    <!-- Planets will be rendered here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__group">
+                    <a href="index.html" class="footer__logo">
+                        <i class="fas fa-rocket"></i>
+                        <span class="logo-text">CosmoData</span>
+                    </a>
+                    <p class="footer__description">
+                        Explorando el universo juntos
+                    </p>
+                </div>
+
+                <div class="footer__group">
+                    <h3 class="footer__title">Navegación</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Inicio</a></li>
+                        <li><a href="sistema-solar.html" class="footer__link">Sistema Solar</a></li>
+                        <li><a href="exploracion.html" class="footer__link">Exploración</a></li>
+                        <li><a href="eventos.html" class="footer__link">Eventos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__group">
+                    <h3 class="footer__title">Tienda</h3>
+                    <ul class="footer__links">
+                        <li><a href="tienda.html" class="footer__link">Productos</a></li>
+                        <li><a href="tienda.html" class="footer__link">Telescopios</a></li>
+                        <li><a href="tienda.html" class="footer__link">Libros</a></li>
+                        <li><a href="tienda.html" class="footer__link">Accesorios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__group">
+                    <h3 class="footer__title">Síguenos</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    © 2025 CosmoData. Explorando el universo juntos.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal__content modal__content--cart">
+            <div class="modal__header">
+                <h2><i class="fas fa-shopping-cart"></i> Carrito</h2>
+                <button class="modal-close" onclick="closeCartModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal__body">
+                <div id="cart-empty" class="cart-empty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Tu carrito está vacío</p>
+                    <a href="tienda.html" class="btn">Explorar Productos</a>
+                </div>
+                <div id="cart-items" class="cart-items"></div>
+            </div>
+            <div class="modal__footer">
+                <div class="cart-total-section">
+                    <span class="cart-total-label">Total:</span>
+                    <span class="cart-total-amount" id="cart-total">$0.00</span>
+                </div>
+                <button class="btn btn-large btn-checkout">
+                    <i class="fas fa-credit-card"></i> Proceder al Pago
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.0/dist/ScrollTrigger.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/shop.js"></script>
+
+    <!-- Render Planets -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const planetsGrid = document.getElementById('planets-grid');
+            if (planetsGrid && typeof planetsData !== 'undefined') {
+                planetsData.forEach((planet, index) => {
+                    const planetCard = document.createElement('article');
+                    planetCard.className = 'planet-card';
+                    planetCard.setAttribute('data-aos', 'fade-up');
+                    planetCard.setAttribute('data-aos-delay', index * 100);
+
+                    planetCard.innerHTML = `
+                        <div class="planet-card__image">
+                            <img src="${planet.image}" alt="${planet.name}" onerror="this.src='assets/images/placeholder.jpg'">
+                            <div class="planet-card__type">${planet.type}</div>
+                        </div>
+                        <div class="planet-card__content">
+                            <h3 class="planet-card__title">${planet.name}</h3>
+                            <p class="planet-card__description">${planet.description}</p>
+                            
+                            <div class="planet-card__stats">
+                                <div class="stat">
+                                    <i class="fas fa-ruler"></i>
+                                    <div class="stat__content">
+                                        <span class="stat__label">Diámetro</span>
+                                        <span class="stat__value">${planet.diameter}</span>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-satellite"></i>
+                                    <div class="stat__content">
+                                        <span class="stat__label">Órbita</span>
+                                        <span class="stat__value">${planet.orbit}</span>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-moon"></i>
+                                    <div class="stat__content">
+                                        <span class="stat__label">Lunas</span>
+                                        <span class="stat__value">${planet.moons}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="planet-card__facts">
+                                <h4><i class="fas fa-lightbulb"></i> Datos Curiosos:</h4>
+                                <ul>
+                                    ${planet.facts.map(fact => `<li>${fact}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    `;
+
+                    planetsGrid.appendChild(planetCard);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
